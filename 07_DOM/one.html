@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color:aquamarine;
+        }
+    </style>
+  </head>
+  <body><div class="bg-black">
+    <h2 class="pingping ">Live is life and life is living </h2>
+    <p id="something" class=""heading>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, natus
+      quae sint voluptas rem aliquam cupiditate eum molestias aperiam placeat
+      cumque tempora in saepe omnis asperiores deserunt officiis quisquam ipsum.
+      Sequi magni soluta inventore accusantium exercitationem tempore nemo
+      corporis non sed? Blanditiis similique quod dolorem, accusantium non
+      molestiae amet voluptates eveniet, eum, in ex incidunt! Fugit qui iure
+      sapiente architecto! Excepturi hic nulla tenetur et quas! Consequuntur
+      libero eligendi et officia nostrum consequatur itaque, distinctio illum
+      maiores quos incidunt, at obcaecati sequi pariatur dicta rem. Dolorem
+      voluptatem sed saepe beatae. Voluptatum quaerat laudantium suscipit
+      voluptatem itaque iure odio officiis quasi autem, saepe debitis distinctio
+      placeat assumenda exercitationem optio soluta reprehenderit delectus
+      doloremque asperiores quia libero? Ad eos odio molestias obcaecati! Nam
+      sapiente consectetur cumque illum provident fugit odit nihil temporibus,
+      et minus in nulla alias magni natus totam non esse quidem aliquam ipsum
+      odio nemo necessitatibus soluta ex ipsam! Amet.
+      
+    </p>
+    <ul class="parent">
+        <li>lalit</li>
+        <li>anand</li>
+        <li>bhavi</li>
+        <li>anmol</li>
+        <li>shubhi</li>
+        <li>aman</li>
+    </ul>
+    </div>
+  </body>
+  <script>
+    const m=document.querySelectorAll('li')
+    m[0].style.color='yellow'
+    m.forEach((element) => {
+      element.style.color='yellow'
+    });
+    console.log("hey i am your friend");
+    const parent=document.querySelector('.parent')
+    //for(let i=0; i<parent.children.length; i++){
+      // console.log(parent.children[i]);
+    //}
+    console.log("Nodes:",parent.childNodes);
+  </script>
+</html>

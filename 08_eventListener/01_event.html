@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="start">start</button>
+    <button class='stop'>stop</button>
+    <button class="clear">clear</button>
+    <div id="one"></div>
+</body>
+<script>
+    const s=document.querySelector('.start')
+    const m=document.querySelector('.stop')
+    let n=document.querySelector('#one')
+    const c=document.querySelector('.clear')
+    let k;
+    s.addEventListener('click',(e)=>{
+        k=setInterval(function(){
+            n.innerHTML=Date.now().toLocaleString()
+        })
+    })
+    m.addEventListener('click',(e)=>{
+        clearInterval(k);
+    })
+    c.addEventListener('click',(e)=>{
+        n.innerHTML=""
+    })
+</script>
+</html>
